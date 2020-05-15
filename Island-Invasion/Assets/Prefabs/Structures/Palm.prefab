@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1717038497062152745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1717038497062152741}
+  - component: {fileID: 1717038497062152744}
+  - component: {fileID: 1717038497062152743}
+  - component: {fileID: 1717038497062152742}
+  - component: {fileID: 4062901539846729364}
+  - component: {fileID: 4861013043413002672}
+  - component: {fileID: -2586010553940672708}
+  m_Layer: 8
+  m_Name: Palm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1717038497062152741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717038497062152745}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.55, y: 0, z: 7.51}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1717038497062152744
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717038497062152745}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1717038497062152743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717038497062152745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ceedeed41487745acd3c6e2ee694b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+--- !u!114 &1717038497062152742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717038497062152745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140904950f6c8ac449d76b84920593cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coconut: {fileID: 4644106378025929766, guid: 64d8addd2b7b44647be8cd87a14fbb8f, type: 3}
+  height: 1
+  matureHeight: 3
+  coconutDropRate: 20
+  seed: {fileID: 7864613027962461142, guid: 6d13c85ef76890e4ab7937d921fadaf1, type: 3}
+  chanceToDropSeed: 0.1
+  growTime: 5
+  palmTrees:
+  - {fileID: 122562, guid: 13f6097cdfae79d44acca4175298212a, type: 3}
+  - {fileID: 107776, guid: c7bc3a9d18ad39d43a6927004d0c24d8, type: 3}
+  - {fileID: 106554, guid: 1e96e737ba439e54a858591faf6298c2, type: 3}
+  - {fileID: 115234, guid: 95f86f1f0990c4b41ab62be60974c732, type: 3}
+  - {fileID: 134342, guid: ccafd6649062902409b7847275334b66, type: 3}
+  - {fileID: 163734, guid: b7015e10553e74c42be74bf4c42965a1, type: 3}
+  - {fileID: 199084, guid: 0d1a48b95430c604b93adbd07a23d89d, type: 3}
+  - {fileID: 191024, guid: ef42109948810e64b94083d7a3c6d924, type: 3}
+  - {fileID: 123934, guid: dffcbbf99069f3949a4ee08ce7052432, type: 3}
+  - {fileID: 155862, guid: 7b8c7a0967ea29b4a8313a1ba3ca0bde, type: 3}
+  - {fileID: 171260, guid: fa0b15e3267056f4da7aa5d4d7bff7de, type: 3}
+  - {fileID: 151464, guid: cf3fc3bb61400ef4c85d231500be1ebb, type: 3}
+  rend: {fileID: 0}
+--- !u!114 &4062901539846729364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717038497062152745}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0899e09db875df4429576fa5f037c5ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  range: 0
+  whatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &4861013043413002672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717038497062152745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c996d07332e55d40825adbc7483f4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: 0
+  category: 1
+  sittingOn: {fileID: 0}
+  myInfo:
+    StructureName: 
+    prefab: []
+    image: []
+    currency: 0
+    cost: 0
+    upgradeCost: 
+    refund: 0
+    maxLevel: 0
+    maxHealth: 0
+    maxDamage: 0
+    maxFirerate: 0
+    maxRange: 0
+  level: 1
+--- !u!114 &-2586010553940672708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717038497062152745}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 656bd48164c6fd44c96425356503e940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundFx: 
+  soundNb: 0
+  partToRotate: {fileID: 0}
+  firePoint: {fileID: 0}
+  damage: 0
+  rotationSpeed: 0
+  projectile: {fileID: 0}
+  fireRate: 0
+  projectileSpeed: 0
+  useLaser: 0
+  laserPrefab: {fileID: 0}
+  launchBullet: 0
+  explosionRadius: 0
+  explosionDamage: 0
